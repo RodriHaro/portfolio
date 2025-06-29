@@ -1,0 +1,39 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    :root {
+        --espaciado-3xl: 4rem;
+        --espaciado-2xl: 3rem;
+    }
+    
+    .contenedor {
+        padding: 0 var(--espaciado-md);
+    }
+    
+    .contenedor-navegacion {
+        padding: 0 var(--espaciado-md);
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 0 var(--espaciado-sm);
+    }
+    
+    .contenedor-navegacion {
+        padding: 0 var(--espaciado-sm);
+    }
+    
+    .enlaces-sociales {
+        justify-content: center;
+    }
+    
+    .enlaces-footer {
+        flex-direction: column;
+        gap: var(--espaciado-sm);
+    }
+}

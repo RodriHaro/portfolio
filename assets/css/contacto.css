@@ -1,0 +1,62 @@
+/* ========================================
+   SECCIÓN CONTACTO
+   ======================================== */
+.seccion-contacto {
+    padding: var(--espaciado-2xl) 0;
+}
+
+.contenido-contacto {
+    margin-top: var(--espaciado-lg);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+    padding: var(--espaciado-lg);
+    border-radius: var(--radio-lg);
+}
+
+.contacto-intro {
+    text-align: center;
+    margin-bottom: var(--espaciado-lg);
+}
+
+.contacto-intro h3 {
+    font-size: 1.5rem;
+    font-weight: var(--peso-semibold);
+    color: var(--color-primario);
+    margin-bottom: var(--espaciado-sm);
+}
+
+.contacto-intro p {
+    font-size: 1rem;
+    color: var(--color-texto-secundario);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contenido-contacto iframe {
+    border: none;
+    border-radius: var(--radio-lg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.98) 100%);
+    overflow: hidden;
+    padding: 30px;
+    border: 3px solid rgba(102, 126, 234, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* ========================================
+   CONTACTO RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .contenido-contacto iframe {
+        height: 600px;
+        padding: 20px;
+    }
+
+    .contacto-intro h3 {
+        font-size: 1.3rem;
+    }
+
+    .contacto-intro p {
+        font-size: 0.9rem;
+    }
+}

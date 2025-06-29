@@ -1,0 +1,171 @@
+/* ========================================
+   SECCIÓN EXPERIENCIA
+   ======================================== */
+.seccion-experiencia {
+    padding: var(--espaciado-2xl) 0;
+}
+
+.timeline-experiencia {
+    max-width: 800px;
+    position: relative;
+    padding-left: 108px;
+}
+
+.timeline-experiencia::before {
+    content: '';
+    position: absolute;
+    left: 130px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-acento);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--espaciado-2xl);
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-fecha {
+    position: absolute;
+    left: -116px;
+    top: -2px;
+    width: 120px;
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+    font-weight: var(--peso-medio);
+    text-align: right;
+    line-height: 1.4;
+}
+
+.timeline-content {
+    position: relative;
+    flex: 1;
+    padding-left: var(--espaciado-xl);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 17px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-acento);
+    border: 3px solid var(--color-fondo);
+    box-shadow: 0 0 0 2px var(--color-acento);
+}
+
+.timeline-titulo {
+    font-size: 1.1rem;
+    font-weight: var(--peso-semibold);
+    color: rgb(250, 204, 21);
+    margin-bottom: var(--espaciado-sm);
+    line-height: 1.3;
+}
+
+.timeline-descripcion {
+    color: var(--color-texto-secundario);
+    line-height: 1.6;
+    margin-bottom: var(--espaciado-md);
+    font-size: 0.95rem;
+}
+
+.timeline-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaciado-xs);
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: var(--radio-sm);
+    font-size: 0.75rem;
+    font-weight: var(--peso-semibold);
+    color: #000000;
+    background: white;
+    border: 2px solid var(--color-borde);
+    transition: var(--transicion-rapida);
+    cursor: pointer;
+    box-shadow: var(--sombra-suave);
+}
+
+.tech-badge:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--sombra-media);
+    border-color: var(--color-primario);
+}
+
+/* Estilos para iconos en tech-badge */
+.tech-badge i,
+.tech-badge span {
+    margin-right: 6px;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+/* Colores para iconos de tecnologías en experiencia */
+.tech-badge.react i { color: #61DAFB; }
+.tech-badge.javascript i { color: #F7DF1E; }
+.tech-badge.wordpress i { color: #21759B; }
+.tech-badge.bootstrap i { color: #7952B3; }
+.tech-badge.python { background: #3776AB; }
+.tech-badge.html5 { background: #E34F26; }
+.tech-badge.css3 { background: #1572B6; }
+
+/* ========================================
+   EXPERIENCIA RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .timeline-experiencia {
+        padding-left: 0;
+        padding-right: var(--espaciado-md);
+    }
+    
+    .timeline-experiencia::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        margin-bottom: var(--espaciado-xl);
+        flex-direction: column;
+    }
+    
+    .timeline-fecha {
+        position: static;
+        width: auto;
+        text-align: left;
+        margin-bottom: var(--espaciado-xs);
+        background: var(--color-primario);
+        color: white;
+        padding: 4px 10px;
+        border-radius: var(--radio-sm);
+        font-size: 0.75rem;
+        display: inline-block;
+        margin-left: 40px;
+    }
+    
+    .timeline-content {
+        padding-left: 40px;
+    }
+    
+    .timeline-dot {
+        left: 14px;
+        top: 8px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .timeline-titulo {
+        font-size: 1rem;
+    }
+    
+    .timeline-descripcion {
+        font-size: 0.9rem;
+    }
+}

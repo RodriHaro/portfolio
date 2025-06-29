@@ -1,0 +1,148 @@
+/* ========================================
+   SECCIÓN HABILIDADES
+   ======================================== */
+.seccion-habilidades {
+    padding: var(--espaciado-2xl) 0;
+}
+
+.seccion-habilidades .encabezado-seccion {
+    margin-bottom: var(--espaciado-md);
+}
+
+.seccion-habilidades .titulo-seccion {
+    margin-bottom: 0rem;
+}
+
+.seccion-habilidades .contenido-habilidades-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaciado-md);
+    justify-content: center;
+    align-items: center;
+    padding: var(--espaciado-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   DISEÑO DE BADGES DE HABILIDADES
+   ======================================== */
+.contenido-habilidades-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaciado-md);
+    justify-content: center;
+    align-items: center;
+    padding: var(--espaciado-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-badge {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--espaciado-md);
+    border-radius: var(--radio-md);
+    font-size: 0.9rem;
+    font-weight: var(--peso-semibold);
+    color: var(--color-texto-principal);
+    background: transparent;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    min-height: 120px;
+}
+
+/* Estilos para iconos en skill-badge */
+.skill-badge i,
+.skill-badge span {
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+    vertical-align: middle;
+}
+
+/* Colores específicos para iconos de tecnologías */
+.skill-badge.react i { color: #61DAFB; }
+.skill-badge.javascript i { color: #F7DF1E; }
+.skill-badge.typescript i { color: #3178C6; }
+.skill-badge.java i { color: #ED8B00; }
+.skill-badge.python i { color: #3776AB; }
+.skill-badge.html i { color: #E34F26; }
+.skill-badge.css i { color: #1572B6; }
+.skill-badge.tailwind i { color: #06B6D4; }
+.skill-badge.bootstrap i { color: #7952B3; }
+.skill-badge.nextjs i { color: #000000; }
+.skill-badge.supabase i { color: #3ECF8E; }
+.skill-badge.wordpress i { color: #21759B; }
+
+/* Soft Skills con gradiente */
+.skill-badge.soft-skill {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: white;
+    padding: var(--espaciado-xs) var(--espaciado-md);
+    border-radius: var(--radio-lg);
+    font-size: 0.8rem;
+}
+
+/* Animación de entrada escalonada */
+.skill-badge {
+    animation: slideInUp 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.skill-badge:nth-child(1) { animation-delay: 0.1s; }
+.skill-badge:nth-child(2) { animation-delay: 0.15s; }
+.skill-badge:nth-child(3) { animation-delay: 0.2s; }
+.skill-badge:nth-child(4) { animation-delay: 0.25s; }
+.skill-badge:nth-child(5) { animation-delay: 0.3s; }
+.skill-badge:nth-child(6) { animation-delay: 0.35s; }
+.skill-badge:nth-child(7) { animation-delay: 0.4s; }
+.skill-badge:nth-child(8) { animation-delay: 0.45s; }
+.skill-badge:nth-child(9) { animation-delay: 0.5s; }
+.skill-badge:nth-child(10) { animation-delay: 0.55s; }
+.skill-badge:nth-child(11) { animation-delay: 0.6s; }
+.skill-badge:nth-child(12) { animation-delay: 0.65s; }
+.skill-badge:nth-child(13) { animation-delay: 0.7s; }
+.skill-badge:nth-child(14) { animation-delay: 0.75s; }
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   HABILIDADES RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .contenido-habilidades-badges {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--espaciado-sm);
+        justify-items: center;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: var(--espaciado-md);
+    }
+
+    .skill-badge {
+        width: 100px;
+        min-height: 100px;
+        padding: var(--espaciado-sm);
+        font-size: 0.8rem;
+    }
+
+    .skill-badge i,
+    .skill-badge span {
+        font-size: 2rem;
+        margin-bottom: 6px;
+    }
+}

@@ -1,0 +1,109 @@
+/* ========================================
+   SECCIÓN SOBRE MÍ
+   ======================================== */
+.seccion-sobre-mi {
+    padding: var(--espaciado-2xl) 0;
+}
+
+.contenido-sobre-mi {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espaciado-xl);
+    align-items: center;
+    margin-top: 0;
+}
+
+.descripcion-personal p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: var(--espaciado-md);
+    color: var(--color-texto-secundario);
+}
+
+.imagen-sobre-mi-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-sobre-mi-container .imagen-sobre-mi {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-sobre-mi-container .imagen-sobre-mi:hover {
+    transform: scale(1.03);
+}
+
+.seccion-sobre-mi .encabezado-seccion {
+    margin-bottom: 1rem;
+}
+
+.seccion-sobre-mi .titulo-seccion {
+    margin-bottom: -7rem !important;
+}
+
+
+/* ========================================
+   SOBRE MÍ RESPONSIVE
+   ======================================== */
+@media (max-width: 1000px) {
+    .seccion-sobre-mi .titulo-seccion {
+        margin-bottom: -5rem !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .seccion-sobre-mi .titulo-seccion {
+        margin-bottom: 0 !important;
+    }
+    
+    .seccion-sobre-mi .encabezado-seccion {
+        margin-bottom: var(--espaciado-lg);
+    }
+    
+    .contenido-sobre-mi {
+        grid-template-columns: 1fr;
+        gap: var(--espaciado-lg);
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .imagen-sobre-mi-container {
+        order: -1;
+        margin-bottom: var(--espaciado-md);
+    }
+
+    .imagen-sobre-mi-container .imagen-sobre-mi {
+        max-width: 250px;
+        width: 90%;
+    }
+
+    .descripcion-personal {
+        text-align: center;
+    }
+    
+    .descripcion-personal p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: var(--espaciado-sm);
+    }
+}
+
+/* Responsive adicional para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .imagen-sobre-mi-container .imagen-sobre-mi {
+        max-width: 200px;
+        width: 80%;
+    }
+    
+    .descripcion-personal p {
+        font-size: 0.95rem;
+        padding: 0 var(--espaciado-sm);
+    }
+}

@@ -1,0 +1,91 @@
+/* ========================================
+   ANIMACIONES Y UTILIDADES
+   ======================================== */
+
+/* Secciones generales */
+section {
+    padding: var(--espaciado-2xl) 0;
+}
+
+/* ========================================
+   ANIMACIONES CSS
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.timeline-educacion-item {
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.timeline-educacion-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-educacion-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-educacion-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-educacion-item:nth-child(4) { animation-delay: 0.4s; }
+
+.proyecto {
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.proyecto:nth-child(1) { animation-delay: 0.1s; }
+.proyecto:nth-child(2) { animation-delay: 0.2s; }
+.proyecto:nth-child(3) { animation-delay: 0.3s; }
+.proyecto:nth-child(4) { animation-delay: 0.4s; }
+.proyecto:nth-child(5) { animation-delay: 0.5s; }
+
+/* ========================================
+   MEJORAS DE ACCESIBILIDAD
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}

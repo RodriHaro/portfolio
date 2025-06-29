@@ -1,0 +1,65 @@
+/* =================================================================
+   ICONOS SVG PERSONALIZADOS
+   ================================================================= */
+
+/* Iconos SVG personalizados para tecnologías */
+.icon-typescript::before {
+    content: '';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 8px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSIjMzE3OEM2Ii8+CjxwYXRoIGQ9Ik0xMi41IDEzLjVIMTVWMTVIMTAuNVY5SDE1VjEwLjVIMTIuNVYxM1Y5SDE1VjEwLjVIMTIuNVYxM1pNMTcuNSA5VjE1SDE5VjlIMTcuNVoiIGZpbGw9IndoaXRlIi8+Cjx0ZXh0IHg9IjEyIiB5PSIxNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VFM8L3RleHQ+Cjwvc3ZnPgo=');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.icon-nextjs::before {
+    content: '';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 8px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTIiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMC41IDguNUgxM1YxNS41SDEwLjVWOC41WiIgZmlsbD0id2hpdGUiLz4KPHA+aDxwYXRoIGQ9Ik0xNS41IDguNUgxOFYxNS41SDE1LjVWOC41WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTYgOC41SDE4VjEwSDZWOC41WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.icon-tailwind::before {
+    content: '';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 8px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDYuMDM2QzEwLjIgNi4wMzYgOS4wNzIgNi45MiA4LjUwOCA4LjY4OEM5LjI1MiA3LjY5MiAxMC4yIDcuMTkyIDExLjM1MiA3LjE5MkMxMy40NTIgNy4xOTIgMTQuNjA0IDguNTQ4IDE2LjA5MiA5LjI0QzE4LjI5MiAxMC4zNzYgMjAuOCAxMC4wOTIgMjIgOEMyMC4yIDEyIDEzLjYgMTIgMTIgNi4wMzZaTTYgMTMuOTY0QzQuMiAxMy45NjQgMy4wNzIgMTQuODQ4IDIuNTA4IDE2LjYxNkMzLjI1MiAxNS42MiA0LjIgMTUuMTIgNS4zNTIgMTUuMTJDNy40NTIgMTUuMTIgOC42MDQgMTYuNDc2IDEwLjA5MiAxNy4xNjhDMTIuMjkyIDE4LjMwNCAxNC44IDE4LjAyIDE2IDE2QzE0LjIgMjAgNy42IDIwIDYgMTMuOTY0WiIgZmlsbD0iIzA2QjZENCIvPgo8L3N2Zz4K');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.icon-supabase::before {
+    content: '';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 8px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1zbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMjIgMTJIMTJWMlpNMTIgMjJMMiAxMkgxMlYyMloiIGZpbGw9IiMzRUNGOEUiLz4KPC9zdmc+Cg==');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+/* Estilos para badges de tecnologías */
+.tech-badge.icon-typescript::before,
+.tech-badge.icon-nextjs::before,
+.tech-badge.icon-tailwind::before,
+.tech-badge.icon-supabase::before {
+    margin-right: 6px;
+    width: 1em;
+    height: 1em;
+}
